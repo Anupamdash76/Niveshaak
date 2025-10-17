@@ -1,6 +1,7 @@
 import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
 import ActionWindow from "./ActionWindow";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 const GeneralContext = createContext();
 
@@ -13,15 +14,15 @@ export const GeneralContextProvider = ({ children }) => {
   const refetchData = () => {
     setTimeout(() => {
       const cacheBuster = `?timestamp=${new Date().getTime()}`;
-      axios.get(`http://localhost:3002/allHoldings${cacheBuster}`)
+      axios.get(`${apiUrl}/allHoldings${cacheBuster}`)
         .then((res) => setHoldings(res.data))
         .catch(err => console.error("Error fetching holdings:", err));
 
-      axios.get(`http://localhost:3002/allPositions${cacheBuster}`)
+      axios.get(`${apiUrl}/allPositions${cacheBuster}`)
         .then((res) => setPositions(res.data))
         .catch(err => console.error("Error fetching positions:", err));
 
-      axios.get(`http://localhost:3002/allOrders${cacheBuster}`)
+      axios.get(`${apiUrl}/allOrders${cacheBuster}`)
         .then((res) => setOrders(res.data))
         .catch(err => console.error("Error fetching orders:", err));
     }, 500);
