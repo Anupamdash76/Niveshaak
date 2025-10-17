@@ -1,0 +1,5 @@
+.app-container {
+  width: 100%;
+  max-width: 1600px; /* You can adjust this value - 1600px is good for wide dashboards */
+  margin: 0 auto;    /* This automatically centers the container */
+}

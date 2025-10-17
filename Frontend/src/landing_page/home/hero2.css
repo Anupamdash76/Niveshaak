@@ -1,0 +1,52 @@
+.main-container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.25), rgba(245, 124, 0, 1), rgba(255, 255, 255, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.step {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 90%;
+  max-width: 60rem;
+  margin: 1rem auto;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.step:hover {
+  transform: scale(1.08) translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.step h4 {
+  font-size: 1.375rem;
+  margin-bottom: 0.75rem;
+  color: #f57c00;
+}
+
+.step p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.step1 { margin-left: 0; }
+.step2 { margin-left: 40px; }
+.step3 { margin-left: 80px; }
+.step4 { margin-left: 120px; }

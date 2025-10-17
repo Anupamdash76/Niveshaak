@@ -1,0 +1,53 @@
+/* WhyNiveshak.css */
+.usp-container {
+  background-color: #DBDBDB;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.usp-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.usp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.usp-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 20rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.usp-card:hover {
+  transform: translateY(-0.5rem) scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.usp-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.usp-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #f57c00;
+}
+
+.usp-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}

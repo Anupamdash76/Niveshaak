@@ -1,0 +1,57 @@
+/* src/components/Positions.css */
+
+.positions-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--grey);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+.positions-container .title {
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin: 0 0 20px 0;
+}
+
+/* Using the same table styling as Holdings for consistency */
+.order-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th {
+  background-color: var(--light-grey-bg);
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.order-table td {
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--grey);
+}
+
+.order-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* P&L color styling */
+.order-table .profit {
+  color: var(--green);
+  font-weight: 500;
+}
+.order-table .loss {
+  color: var(--red);
+  font-weight: 500;
+}

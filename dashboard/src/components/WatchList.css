@@ -1,0 +1,118 @@
+/* src/components/WatchList.css */
+
+/* ========== 3. WATCHLIST ========== */
+.watchlist-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid var(--grey);
+  padding: 15px;
+  width: 320px;
+  margin: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search {
+  width: 100%;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.search:focus {
+  outline: none;
+  border-color: var(--saffron);
+}
+
+.counts {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #777;
+  white-space: nowrap;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5px;
+  border-bottom: 1px solid var(--light-grey-bg);
+  transition: background-color 0.2s ease;
+}
+
+.list li:hover {
+  background-color: #f9f9f9;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.item p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.actions .buy,
+.actions .sell,
+.actions .action {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.actions .buy {
+  background-color: var(--saffron);
+}
+
+.actions .sell {
+  background-color: var(--red);
+}
+
+.actions .action {
+  background-color: var(--grey);
+  color: var(--text-dark);
+}
+
+.actions .icon {
+  font-size: 16px;
+  display: block;
+}
+
+.watchlist-container .DoughnutChart {
+    display: none;
+}

@@ -1,0 +1,84 @@
+/* src/components/Holdings.css */
+
+.holdings-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--grey);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+.holdings-container .title {
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin: 0 0 20px 0;
+}
+
+/* Table Styling */
+.order-table {
+  width: 100%;
+  overflow-x: auto; /* For responsiveness on smaller screens */
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse; /* Removes space between cells */
+}
+
+.order-table th {
+  background-color: var(--light-grey-bg);
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.order-table td {
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--grey);
+}
+
+.order-table tr:last-child td {
+  border-bottom: none; /* Removes border from the last row */
+}
+
+/* P&L color styling */
+.order-table .profit {
+  color: var(--green);
+  font-weight: 500;
+}
+.order-table .loss {
+  color: var(--red);
+  font-weight: 500;
+}
+
+/* Summary row below the table */
+.holdings-container .row {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+  border-top: 1px solid var(--grey);
+}
+
+.holdings-container .row h5 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+.holdings-container .row p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Give the P&L summary column its color */
+.holdings-container .row .col:last-child h5 {
+  color: var(--green);
+}

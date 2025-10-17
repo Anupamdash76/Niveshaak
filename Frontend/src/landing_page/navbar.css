@@ -1,0 +1,74 @@
+.nav-opacity-transition {
+  opacity: 60%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.niveshak-text{
+  font-weight: 900;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-div-logo{
+  padding-left: 7%;
+}
+.main-div-text{
+  padding-left: 15%;
+  margin-left: 5%;
+}
+
+.opacity-transition:hover {
+  opacity: 100%;
+  text-decoration: underline;
+  text-decoration-color:black ;
+  scale: 1.15;
+  font-weight: 500;
+  ;
+}
+.navbar {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  padding-left: 10%;
+  margin-left: 0%;
+}
+.navbar-nav {
+  gap: 1rem;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+
+}
+.collapse{
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbarSupportedContent{
+    padding-right: 5%;
+    margin-right:5%;
+    margin-left: 14.5%;
+}
+
+.navcol{
+  background-color: #DADBDB;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.85); /* clean glass look */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: #1e1e1e;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #F57C00;
+}

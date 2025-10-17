@@ -1,0 +1,80 @@
+/* src/components/TopBar.css */
+
+/* ========== 2. TOPBAR & MENU ========== */
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.menus ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.menu, .menu.selected {
+  color: var(--white);
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu.selected {
+  color: var(--saffron);
+  font-weight: 700;
+  border-bottom: 3px solid var(--saffron);
+}
+
+.menus ul li a p {
+    margin: 0;
+}
+
+.menus hr, .menus .profile {
+  display: none;
+}
+
+.indices-container {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+.nifty, .sensex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.index {
+  font-weight: 600;
+  color: var(--grey);
+}
